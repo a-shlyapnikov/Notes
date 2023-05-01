@@ -22,7 +22,7 @@ class Data_Base:
                 items = items[:items.rfind('}')].split('},')
             for item in items:
                 id, title, body, create_time, last_change = self.parse(item)
-                self.board.load(id, title, body, create_time, last_change)
+                self.book.load(id, title, body, create_time, last_change)
         except:
             if os.path.isfile('notes_db.json'):
                 self.ui.error_load()

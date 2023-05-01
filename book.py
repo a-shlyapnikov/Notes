@@ -14,7 +14,7 @@ class Book:
     def set_count(self, value):
         self.count = value
     
-    def new_note(self, title, body):
+    def new(self, title, body):
         self.notes.append(Note(self.count, title, body))
         self.count += 1
 
